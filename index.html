@@ -19,15 +19,9 @@
     <button v-on:click.right="reduce(5)">Subtract 5</button>
     <p v-once>Starting Counter: {{ counter }}</p>
     <p>Result: {{ counter }}</p>
-    <input 
-      type="text"
-      v-on:input="setName($event, 'Scharvxmul')" 
-      v-on:keyup.enter="confirmInput">
-    <p>Your Name: {{ confirmedName }}</p>
-    <form v-on:submit.prevent="submitForm">
-      <input type="text">
-      <button>Sign Up</button>
-    </form>
+    <input type="text" v-model="name">
+    <button v-on:click="resetInput">Reset Input</button>
+    <p>Your Name: {{ name }}</p>
   </section>
 </body>
 </html>
