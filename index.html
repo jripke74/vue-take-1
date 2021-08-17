@@ -17,10 +17,13 @@
     <h2>My course goals</h2>
     <input type="text" v-model="enteredGoalValue" />
     <button @click="addGoal">Add Goal</button>
-    <p v-if="goals.length === 0">No goals have been added yet - please sart adding some!</p>
+    <p v-if="goals.length === 0">
+      No goals have been added yet - please sart adding some!
+    </p>
     <ul v-else>
-      <li v-for="(goal, index) in goals" @click="removeGoal(index)">
-        {{ goal }} - {{ index }}
+      <li v-for="(goal, index) in goals" :key="goal" @click="removeGoal(index)">
+        <p>{{ goal }} - {{ index }}</p>
+        <input type="text" @click.stop>
       </li>
     </ul>
   </section>
