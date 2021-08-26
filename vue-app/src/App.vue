@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h2>My Friends</h2>
+    <header>
+      <h2>My Friends</h2>
+    </header>
     <ul>
       <friend-contact></friend-contact>
       <friend-contact></friend-contact>
@@ -32,3 +34,7 @@ export default {
   },
 };
 </script>
+
+<style>
+
+</style>
