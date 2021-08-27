@@ -5,15 +5,12 @@
     </header>
     <ul>
       <friend-contact
-        name="Jeff Ripke"
-        phone-number="333-323-3332"
-        email-address="hhhhhd@djhkhk.com"
-        is-favorite="1"
-      ></friend-contact>
-      <friend-contact
-        name="Hailey Ripke"
-        phone-number="333-332-3332"
-        email-address="dfdsd@djhkhk.com"
+        v-for="friend in friends"
+        :key="friend.id"
+        :name="friend.name"
+        :phone-number="friend.phoneNumber"
+        :email-address="friend.email"
+        :is-favorite="true"
       ></friend-contact>
     </ul>
   </section>
@@ -30,11 +27,13 @@ export default {
         {
           id: 'Max',
           name: 'Maximillion',
+          phoneNumber: '123-456-7890',
           email: 'fict@email.com',
         },
         {
           id: 'Jeff',
-          name: 'Maximillion',
+          name: 'Jeff',
+          phoneNumber: '098-765-4321',
           email: 'fict@email.com',
         },
       ],
