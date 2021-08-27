@@ -14,7 +14,6 @@
         name="Hailey Ripke"
         phone-number="333-332-3332"
         email-address="dfdsd@djhkhk.com"
-        is-favorite="0"
       ></friend-contact>
     </ul>
   </section>
@@ -59,8 +58,8 @@ header {
   margin: 3rem auto;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #58004d;
-  color: white;
+  background-color: #96498c;
+  color: rgb(255, 255, 255);
   text-align: center;
   width: 90%;
   max-width: 40rem;
@@ -82,7 +81,7 @@ header {
 #app h2 {
   font-size: 2rem;
   /* border-bottom: 4px solid #ccc; */
-  color: #ccc;
+  color: rgb(31, 27, 27);
   margin: 0 0 1rem 0;
 }
 #app button {
