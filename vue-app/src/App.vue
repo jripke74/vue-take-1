@@ -8,11 +8,13 @@
         name="Jeff Ripke"
         phone-number="333-323-3332"
         email-address="hhhhhd@djhkhk.com"
+        is-favorite="1"
       ></friend-contact>
       <friend-contact
         name="Hailey Ripke"
         phone-number="333-332-3332"
         email-address="dfdsd@djhkhk.com"
+        is-favorite="0"
       ></friend-contact>
     </ul>
   </section>
